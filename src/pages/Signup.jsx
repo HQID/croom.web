@@ -20,7 +20,7 @@ const Signup = () => {
         axios.get('/verify')
         .then((res) => {
           if(res.data.status) {
-            navigate('/home')
+            navigate('/')
           }
         })
       }, [])

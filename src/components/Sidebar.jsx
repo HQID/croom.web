@@ -33,7 +33,7 @@ const Sidebar = () => {
   const [loading, setLoading] = useState(true);
 
   const menuItems = [
-    { name: 'Dashboard', icon: dashboard, path: '/home' },
+    { name: 'Dashboard', icon: dashboard, path: '/' },
     { name: 'Schedule', icon: schedule, path: '/schedule' },
     { name: 'Notes', icon: notes, path: '/notes' },
     { name: 'ChatBot', icon: chatBot, path: '/chatbot' },

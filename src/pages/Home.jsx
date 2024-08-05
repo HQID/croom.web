@@ -22,7 +22,7 @@ const Home = () => {
     axios.get('/verify')
     .then((res) => {
       if(!res.data.status) {
-        navigate('/login')
+        navigate('/')
       }
     })
   }, [])

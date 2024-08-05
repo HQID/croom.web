@@ -23,7 +23,7 @@ function App() {
     <Toaster position="bottom-right" toastOptions={{duration: 2000}} />
       <Router>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path='/account' element={<Account />} />
           <Route path='/notes' element={<Notes />} />
           <Route path="/schedule" element={<Schedule/>} />
