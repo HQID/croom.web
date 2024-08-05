@@ -82,7 +82,7 @@ const Home = () => {
         </section>
 
         <section className="flex flex-col gap-8 w-full py-16 px-20 mobile:py-0 mobile:px-0 mobile:gap-6 bg-slate-400 justify-center items-center text-slate-700 bg-[url('https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover bg-no-repeat bg-gray-400 bg-blend-multiply">
-          <form onSubmit={handleSubmit} className='w-3/4 flex flex-col bg-slate-100 p-10 rounded-2xl mobile:w-full mobile:rounded-none'>
+          <form onSubmit={handleSubmit} className='w-3/4 flex flex-col bg-slate-100 p-10 rounded-2xl mobile:w-full mobile:rounded-none mobile:px-6'>
             <h2 className='text-3xl text-center font-semibold mb-8'>Contact Us</h2>
             <div className="w-full px-4 mb-8">
               <label className="font-bold">Name</label>
@@ -120,7 +120,7 @@ const Home = () => {
         </section>
 
         <footer className='w-full flex flex-col pt-16 bg-slate-900 text-white font-semibold'>
-          <div className=' px-20 mb-10'>
+          <div className=' px-20 mb-10 mobile:px-6'>
             <h2 className='text-4xl mb-4'>Croom</h2>
             <p className='text-lg'>web.croom.io@gmail.com</p>
             <p className='text-lg mb-4'>Sulawesi Tengah, Indonesia</p>

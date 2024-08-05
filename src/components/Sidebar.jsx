@@ -2,9 +2,9 @@ import chatBot from "../assets/chatbot.png"
 import dashboard from "../assets/layout.png"
 import schedule from "../assets/schedule.png"
 import notes from "../assets/writing.png"
-import account from "../assets/user.png"
+import account from "../assets/account.png"
 import profile from "../assets/profile.png"
-import logout from "../assets/logout.png"
+import change from "../assets/change.png"
 import croom from "../assets/croom.png"
 import { Link, useLocation } from "react-router-dom"
 import { HamburgerIcon } from "@chakra-ui/icons"
@@ -46,12 +46,9 @@ const Sidebar = () => {
 
   const logoutUser = async () => {
     try {
-      const res = await axios.post('/logout', {}, {
-        credentials: "include"
-      })
+      const res = await axios.post('/logout')
       if(res.data.status) {
         navigate('/login')
-        window.location.reload()
       }
     } catch (err) {
       console.log(err)
@@ -125,11 +122,11 @@ const Sidebar = () => {
               className='group relative flex items-center mobile:justify-center w-full rounded-lg px-2 py-1.5 text-sm hover:bg-blue-50 cursor-pointer'
               onClick={onOpen}
             >
-              <img src={logout} alt="logout" />
+              <img src={change} alt="change account" />
               <span
                 className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
               >
-                Logout
+                ChangeAccount
               </span>
             </div>
         </div>
@@ -141,10 +138,10 @@ const Sidebar = () => {
           <ModalHeader textAlign='center'>Are you Sure?</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6} display='flex' justifyContent='center' gap={3}>
-          <Button bg='red.500' color='white' _hover={{bg:'red.300'}} mr={3} onClick={logoutUser}>
-              Logout
+          <Button bg='gray.700' color='white' _hover={{bg:'red.300'}} mr={3} onClick={logoutUser}>
+              Yes
             </Button>
-            <Button onClick={onClose}>Cancel</Button>
+            <Button onClick={onClose}>No</Button>
           </ModalBody>
         </ModalContent>
       </Modal>
