@@ -1,0 +1,35 @@
+#my-calendar {
+  @apply w-full h-[500px] bg-white
+}
+
+#my-calendar .rbc-toolbar {
+    @apply p-4 rounded-t-lg flex justify-between items-center;
+  }
+
+  #my-calendar .rbc-header {
+    @apply text-lg
+  }
+
+  #my-calendar .rbc-btn-group {
+    @apply flex gap-2 mobile:order-last mobile:gap-4 mobile:mt-2
+  }
+
+  #my-calendar .rbc-toolbar button {
+    @apply font-semibold py-2 px-4 bg-slate-700 text-white rounded-xl hover:opacity-80 shadow-lg transition duration-500 text-sm mobile:text-xs;
+  }
+  
+  #my-calendar .rbc-toolbar-label {
+    @apply text-2xl font-bold text-gray-800;
+  }
+  
+  #my-calendar .rbc-event {
+    @apply bg-sky-500 text-white p-2 rounded shadow-lg;
+  }
+  
+  #my-calendar .rbc-date-cell {
+    @apply text-sm font-medium text-gray-600;
+  }
+  
+  #my-calendar .rbc-allday-cell {
+    @apply hidden
+  }
