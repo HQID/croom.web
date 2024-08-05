@@ -24,13 +24,13 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path='/account' element={<Account />} />
-          <Route path='/notes' element={<Notes />} />
-          <Route path="/schedule" element={<Schedule/>} />
-          <Route path="/chatbot" element={<Chatbot/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<Signup/>} />
-          <Route path="/changePassword/:token" element={<ChangePassword/>} />
+          <Route path='account' element={<Account />} />
+          <Route path='notes' element={<Notes />} />
+          <Route path="schedule" element={<Schedule/>} />
+          <Route path="chatbot" element={<Chatbot/>} />
+          <Route path="login" element={<Login/>} />
+          <Route path="signup" element={<Signup/>} />
+          <Route path="changePassword/:token" element={<ChangePassword/>} />
         </Routes>
       </Router>
     </UserContextProvider>
