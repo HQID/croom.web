@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from "react-router-dom"
 import axios from "axios"
 import {toast} from "react-hot-toast"
@@ -9,15 +9,6 @@ const Login = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
-    useEffect(() => {
-        axios.get('/verify')
-        .then((res) => {
-          if(res.data.status) {
-            navigate('/')
-          }
-        })
-      }, [])
 
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);

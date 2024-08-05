@@ -17,15 +17,6 @@ const Signup = () => {
     const [isFormValid, setIsFormValid] = useState(false)
 
     useEffect(() => {
-        axios.get('/verify')
-        .then((res) => {
-          if(res.data.status) {
-            navigate('/')
-          }
-        })
-      }, [])
-
-    useEffect(() => {
         setIsFormValid(
             datas.fullname.trim()!== '' &&
             datas.username.trim()!== '' &&
