@@ -138,7 +138,7 @@ const Sidebar = () => {
           <ModalHeader textAlign='center'>Are you Sure?</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6} display='flex' justifyContent='center' gap={3}>
-          <Button bg='gray.700' color='white' _hover={{bg:'red.300'}} mr={3} onClick={logoutUser}>
+          <Button bg='gray.700' color='white' _hover={{bg:'gray.500'}} mr={3} onClick={logoutUser}>
               Yes
             </Button>
             <Button onClick={onClose}>No</Button>
