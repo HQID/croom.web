@@ -44,7 +44,7 @@ const Login = () => {
             } else {
                 setEmail('');
                 setPassword('');
-                navigate('/home')
+                navigate('/')
                 window.location.reload()
                 // toast.success('Login Successful')
             }

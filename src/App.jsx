@@ -14,7 +14,7 @@ import axios from 'axios'
 
 const apiBaseUrlDev = import.meta.env.VITE_API_BASE_URL_DEV
 const apiBaseUrlProd = import.meta.env.VITE_API_BASE_URL_PROD
-axios.defaults.baseURL = import.meta.env.MODE === 'production' ? apiBaseUrlProd : apiBaseUrlDev
+axios.defaults.baseURL = apiBaseUrlProd;
 axios.defaults.withCredentials = true;
 
 function App() {
